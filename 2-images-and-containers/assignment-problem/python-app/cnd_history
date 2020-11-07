@@ -1,0 +1,3 @@
+ 2016  docker build --tag bmi:latest .
+ 2022  docker create -it --name bmi bmi
+ 2024  docker start -ai bmi

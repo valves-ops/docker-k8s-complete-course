@@ -1,0 +1,3 @@
+ 2064  docker build --tag nodeapp:latest .
+ 2074  docker create -p 80:3000 --name nodeapp nodeapp
+ 2075  docker start nodeapp
