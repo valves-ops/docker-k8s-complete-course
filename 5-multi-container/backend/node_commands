@@ -1,0 +1,4 @@
+docker build -t backend .
+docker run --name backend --network feedback-app-net -p 80:8001 --rm -d -v /home/valves/learning/docker/5-multi-container/backend:/app -v /app/node_modules -v logs:/app/logs backend
+# Had to log in the docker and change the ownership of logs folder from root to node user
+chown -R node logs

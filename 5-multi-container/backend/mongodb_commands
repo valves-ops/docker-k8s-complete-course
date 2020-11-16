@@ -1,0 +1,2 @@
+docker network create feedback-app-net
+docker run --network feedback-app-net -d  -v mongodb:/data/db --name mongodb mongo:latest

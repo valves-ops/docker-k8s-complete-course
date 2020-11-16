@@ -1,0 +1,2 @@
+docker build -t frontend .
+docker run --name frontend --network feedback-app-net -p 3000:3000 --rm -it -v /home/valves/learning/docker/5-multi-container/frontend/src:/app/src -v /app/node_modules  frontend
